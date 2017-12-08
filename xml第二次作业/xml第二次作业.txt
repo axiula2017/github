@@ -1,0 +1,47 @@
+#include <iostream>
+using namespace std;
+ 
+class Shape
+{
+public:
+    void Draw() {cout<<"Base::Draw()"<<endl;}
+    void Erase() {cout<<"Base::Erase()"<<endl;}
+    Shape() {Draw();}
+    ~Shape() {Erase();}
+};
+
+class Circle:public Shape
+{
+public:
+    Circle() {Draw();}
+    void Draw() {cout<<"Circle::Draw()"<<endl;}
+    void Erase() {cout<<"Circle Erase()"<<endl;}
+    ~Circle() {Erase();}
+};
+
+class Rectangle:public Circle
+{
+public:
+    Rectangle() {Draw();}
+    void Draw() {cout<<"Rectangle::Draw()"<<endl;}
+    void Erase() {cout<<"Rectangle Erase()"<<endl;}
+    ~Rectangle() {Erase();}
+};
+
+class Square:public Rectangle{
+public:
+    Square() {Draw();}
+    void Draw() {cout<<"Square::Draw()"<<endl;}
+    void Erase() {cout<<"Square Erase()"<<endl;}
+    ~Square() {Erase();}
+};
+
+int main()
+{
+    Circle c;
+    Rectangle s;
+    Square t;
+    cout<<"++++"<<endl;
+    return 0;
+}
+https://www.cnblogs.com/warrior4236/p/5860508.html

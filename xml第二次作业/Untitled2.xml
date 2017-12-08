@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="gb2312"?>
+<class>
+   <student>
+     <name sid="201503511">王1</name>
+     <gender>男</gender>
+     <age>1</age>
+     <phone>123</phone>
+   </student>
+   <student>
+     <name sid="201506512">张2</name>
+     <gender>女</gender>
+     <age>2</age>
+     <phone>456</phone>
+   </student>
+   <student>
+     <name sid="20150513">李3</name>
+     <gender>男</gender>
+     <age>3</age>
+     <phone>789</phone>
+   </student> 
+ </class>
+ 
+
+
+ 
